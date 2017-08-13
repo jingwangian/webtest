@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ian's blog list</title>
+</head>
+<body>
+<h2>Ian's blog list</h2>
+<ul>
+    {% for obj in objects %}
+    <li><a href="{{obj.get_absolute_url}}">{{obj.created}} -- {{obj.title}}<a></li>
+    {% endfor %}
+    <a href="">test</a>
+</ul>
+</body>
+</html>
